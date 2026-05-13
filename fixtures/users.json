@@ -1,0 +1,25 @@
+{
+    "validUser": {
+        "username": "Usuario valido",
+        "email": "user.valido@email.com",
+        "password": "Senha123"     
+    },
+
+    "createUserWithCash": {
+        "username": "Usuario valido",
+        "email": "test.test@teste.com",
+        "password": "Senha123"
+    },
+
+    "createUserWithoutCash": {
+        "username": "Usuario valido NoCash",
+        "email": "test.test.test@teste.com",
+        "password": "Senha123"
+    },
+
+    "wrongUser": {
+        "username": "Wrong User",
+        "email": "teste@teste.teste.teste.com",
+        "password": "Senhasenha"
+    }
+}
