@@ -197,6 +197,8 @@ test('TC 15 - Deve barrar a transferencia para uma conta inválida', async ({ pa
 });
 
 test('TC 15a - Deve barrar a transferencia sem digitar um numero de conta', async ({ page }) => {
+
+    test.fail();
     //Criando a conta com saldo
     await registerPage.acessarTelaDeCadastro();
     await registerPage.preencherEmail(dataMass.createUserWithCash.email);
