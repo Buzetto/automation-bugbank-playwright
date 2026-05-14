@@ -64,4 +64,4 @@ Este projeto possui uma pipeline configurada no GitHub Actions. Toda vez que um 
 
 ---
 Desenvolvido por **Victor Augusto Buzetto**. 
-Sinta-se à vontade para se conectar comigo no [LinkedIn](#) ou visitar meu [Portfólio](#).
+Sinta-se à vontade para se conectar comigo no [LinkedIn](https://www.linkedin.com/in/victoraugustobuzetto/)
