@@ -1,5 +1,8 @@
 name: Testes E2E BugBank
 
+permissions: 
+  contents: write
+
 on:
   push:
     branches: [ main ]
@@ -37,3 +40,10 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+    
+    - name: Publicar Relatório no GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      if: always()
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./playwright-report
