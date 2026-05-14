@@ -26,7 +26,7 @@ test.beforeEach(async ({ page }) => {
     await expect(page).toHaveTitle("BugBank | O banco com bugs e falhas do seu jeito");
 });
 
-test('TC 16 - Deve verificar o saldo positivo após o cadastro da conta com saldo', async ({ page }) => {
+test('TC 17 - Deve verificar o saldo positivo após o cadastro da conta com saldo', async ({ page }) => {
     //Criando a conta para quem recebe o saldo
     await registerPage.acessarTelaDeCadastro();
     await registerPage.preencherEmail(dataMass.createUserWithoutCash.email);
@@ -85,7 +85,7 @@ test('TC 16 - Deve verificar o saldo positivo após o cadastro da conta com sald
     await expect(extractPage.valorDoExtrato.first()).toHaveText('R$ 1.000,00');
 })
 
-test('TC 17 - Deve verificar o saldo  após uma transferencia', async ({ page }) => {
+test('TC 18 - Deve verificar o saldo  após uma transferencia', async ({ page }) => {
     //Criando a conta para quem recebe o saldo
     await registerPage.acessarTelaDeCadastro();
     await registerPage.preencherEmail(dataMass.createUserWithoutCash.email);
@@ -145,7 +145,7 @@ test('TC 17 - Deve verificar o saldo  após uma transferencia', async ({ page })
     await expect(extractPage.saldoDisponivel).toHaveText('R$ 900,00');
 })
 
-test('TC 18 - Deve verificar o saldo recebido através de uma transferencia de outro titular', async ({ page }) => {
+test('TC 19 - Deve verificar o saldo recebido através de uma transferencia de outro titular', async ({ page }) => {
     //Criando a conta para quem recebe o saldo
     await registerPage.acessarTelaDeCadastro();
     await registerPage.preencherEmail(dataMass.createUserWithoutCash.email);
